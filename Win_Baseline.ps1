@@ -89,7 +89,7 @@ foreach ($malicious in $malicious_users) {
 }
 
 #Change Passwords
-$Password = "W3Gr00v1ngT0n8!"
+$Password = "*************"
 foreach($user in $UserList){
     $UserAccount = Get-LocalUser -Name $user
     $UserAccount | Set-LocalUser -Password (ConvertTo-SecureString $Password -AsPlainText -force)
